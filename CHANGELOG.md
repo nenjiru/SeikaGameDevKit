@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.2] - 2026-10-10
+
+Agent setup only. The kit's components are unchanged.
+
+- The installed version is recorded in `.claude/harness-version` (version, whether the Discord reporter is included, and the source commit). Future updates will compare local files with the original files of that version, so project-specific changes can be kept
+
 ## [0.2.1] - 2026-10-10
 
 Agent setup only. The kit's components are unchanged.
