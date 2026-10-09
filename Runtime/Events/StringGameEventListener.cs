@@ -1,0 +1,10 @@
+using UnityEngine;
+
+namespace SeikaGameDevKit.Events
+{
+    /// <summary>
+    /// string を1つ持つイベントを受けて、Inspector でつないだ反応に値を渡す。
+    /// </summary>
+    [AddComponentMenu("Seika Game Dev Kit/Events/String Game Event Listener")]
+    public class StringGameEventListener : GameEventListener<string, StringGameEvent> { }
+}

@@ -1,0 +1,11 @@
+# Changelog
+
+## [0.2.0] - 2026-10-09
+
+First public release.
+
+- Events (`SeikaGameDevKit.Events`): event assets without a value and with an int, float or string value, plus listener components wired in the Inspector. Custom value types take one line. `GameEventBase.AnyRaised` reports every raised event in one place
+- Play log (`SeikaGameDevKit.Recording`): every Play Mode session in the editor automatically records session start and end, scene loads, events and console output to `Logs/PlayLog/` as JSON Lines. Entries that repeat too often are folded into one line per second
+- Tuning changes (`SeikaGameDevKit.Editor.Tuning`): when Play Mode ends, ScriptableObject values in `Data/` that changed during play are listed so each can be overwritten or reverted. Changes and choices are appended to the play log
+- Debug markers (`SeikaGameDevKit.Visualization`): objects with a `Debug Marker` are always drawn in the Scene view with a label (collider shapes, or a position marker when there is no collider). Colliders without visuals and all triggers are drawn without a marker. A menu item and a shortcut toggle all markers
+- Convention check (`SeikaGameDevKit.Editor.Conventions`): checks placement, names, Art contents and scripts against the folder tree in `PROJECT_CONVENTIONS.md` and the Root namespace, and shows the result in a window and in `Logs/Conventions/latest.json`. Warns about disallowed names on import
