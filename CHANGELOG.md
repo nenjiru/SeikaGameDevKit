@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1] - 2026-10-10
+
+Agent setup only. The kit's components are unchanged.
+
+- At the start of a session, the agent checks whether it was opened in a git worktree (Claude Desktop can open sessions there). If so, it does not edit files, use Unity MCP or commit, because the Unity editor has the main project folder open and the changes would not reach it. `.claude/worktrees/` is now ignored by git
+- When turning an idea into a task, the agent looks up facts in the project (design document, TODO, code, scenes) itself and only asks the student about decisions
+- The guides point to the `Components` table in this README. The setup without Discord no longer mentions the Discord reporter
+
 ## [0.2.0] - 2026-10-09
 
 First public release.

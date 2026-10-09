@@ -22,7 +22,7 @@ Existing files are never overwritten.
 Add one line to `dependencies` in `Packages/manifest.json` (the part after `#` is the version tag).
 
 ```json
-"jp.digicre.seika-game-dev-kit": "https://github.com/nenjiru/SeikaGameDevKit.git#v0.2.0"
+"jp.digicre.seika-game-dev-kit": "https://github.com/nenjiru/SeikaGameDevKit.git#v0.2.1"
 ```
 
 A kit installed through the Package Manager is read-only. Report bugs and missing features to the instructor.
